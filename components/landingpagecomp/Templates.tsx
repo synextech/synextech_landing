@@ -40,14 +40,15 @@ export default function Templates() {
     "https://assets.aceternity.com/world-map.webp",
   ];
   return (
-    <div className="min-h-screen flex flex-col justify-around items-center pt-10">
+    <div className="min-h-screen w-full flex flex-col justify-around items-center pt-10 px-5">
       <AnimatedShinyText className="inline-flex flex-col items-center text-4xl text-center md:text-6xl justify-center font-bold transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
             <span>✨ Templates</span>
             <span className="text-lg md:text-2xl py-6 text-center font-medium w-full">First Landing page Templates are Free</span>
           </AnimatedShinyText>
-    <div className="mx-auto max-w-7xl rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
+    <div className="mx-0 md:mx-auto md:w-full w-80 md:max-w-7xl rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
       <ThreeDMarquee images={images} />
     </div>
+
       <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
       <span
         className={cn(
