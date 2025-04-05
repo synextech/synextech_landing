@@ -1,50 +1,51 @@
-import { Faq3 } from "@/components/faq3";
+import { FaqAccordion } from "@/components/ui/faq-chat-accordion";
+import { AnimatedGradientText } from "@/src/components/magicui/animated-gradient-text";
 
-const demoData = {
-  heading: "Frequently asked questions",
-  description:
-    "Everything you need to know about shadcnblocks. Can't find the answer you're looking for? Feel free to contact our support team.",
-  items: [
-    {
-      id: "faq-1",
-      question: "What is shadcnblocks?",
-      answer:
-        "shadcnblocks is a collection of ready-to-use block components built on top of shadcn/ui, designed to help you build beautiful websites faster.",
-    },
-    {
-      id: "faq-2",
-      question: "How do I install shadcnblocks?",
-      answer:
-        "shadcnblocks components are designed to be copied and pasted into your project. Simply browse the components, click on the one you want to use, and copy the code directly into your project. This gives you full control over the code and allows for easy customization.",
-    },
-    {
-      id: "faq-3",
-      question: "Is shadcnblocks free to use?",
-      answer:
-        "Yes, shadcnblocks is open-source and free to use in both personal and commercial projects. You can customize and modify the blocks to suit your needs.",
-    },
-    {
-      id: "faq-4",
-      question: "Can I customize the blocks?",
-      answer:
-        "Absolutely! All blocks are built with customization in mind. You can modify the styling, content, and behavior through props and Tailwind CSS classes.",
-    },
-    {
-      id: "faq-5",
-      question: "Do you offer support?",
-      answer:
-        "Yes, we provide support through our GitHub repository where you can report issues, suggest features, or ask questions about implementation.",
-    },
-  ],
-  supportHeading: "Still have questions?",
-  supportDescription:
-    "Can't find the answer you're looking for? Our support team is here to help with any technical questions or concerns.",
-  supportButtonText: "Contact Support",
-  supportButtonUrl: "https://shadcnblocks.com",
+const defaultData = [
+  {
+    answer: "The internet doesn't close. It's available 24/7.",
+    iconPosition: "right" as "right" | "left",
+    id: 1,
+    question: "How late does the internet close?",
+  },
+  {
+    answer: "No, you don't need a license to browse this website.",
+    id: 2,
+    question: "Do I need a license to browse this website?",
+  },
+  {
+    answer:
+      "Our cookies are digital, not edible. They're used for website functionality.",
+    id: 3,
+    question: "What flavour are the cookies?",
+  },
+  {
+    answer: "Yes, but we do have a return policy",
+    iconPosition: "left" as "right" | "left",
+    id: 4,
+    question: "Can I get lost here?",
+  },
+  {
+    answer: "Don't worry, you can always go back or refresh the page.",
+    id: 5,
+    question: "What if I click the wrong button?",
+  },
+];
+const Faq = () => {
+  return (
+    <div className="h-150 w-full flex flex-col justify-center items-center bg-background">
+      <AnimatedGradientText className="text-4xl md:text-6xl font-bold my-10 py-4">
+        FAQs
+      </AnimatedGradientText>
+      <FaqAccordion
+        data={defaultData}
+        className="max-w-[700px]"
+        questionClassName="bg-zinc-200 dark:bg-zinc-800 hover:bg-zinc-300 hover:dark:bg-zinc-700"
+        answerClassName="bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-foreground"
+        timestamp="Updated daily at 12:00 PM"
+      />
+    </div>
+  );
 };
 
-function Faq3Demo() {
-  return <Faq3 {...demoData} />;
-}
-
-export { Faq3Demo };
+export default Faq;

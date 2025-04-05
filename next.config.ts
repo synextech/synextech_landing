@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         hostname: "ui.aceternity.com", // ✅ Add this line
       },
     ],
+    domains: [
+      "avatars.githubusercontent.com", 
+      "images.unsplash.com",
+    ],
   },
 };
 
