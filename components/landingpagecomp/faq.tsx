@@ -31,7 +31,7 @@ const defaultData = [
     question: "What if I click the wrong button?",
   },
 ];
-const Faq = () => {
+const FAQ = () => {
   return (
     <div className="h-150 w-full flex flex-col justify-center items-center bg-background">
       <AnimatedGradientText className="text-4xl md:text-6xl font-bold my-10 py-4">
@@ -48,4 +48,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FAQ;
