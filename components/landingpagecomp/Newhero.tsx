@@ -3,10 +3,11 @@
 import { motion } from "motion/react";
 import React from "react";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, MoveDown } from "lucide-react";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const people = [
   {
@@ -54,11 +55,21 @@ const Newhero = () => {
           technology that drives growth.
         </div>
         <div className="flex justify-center text-center">
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="dark:bg-black bg-white text-black dark:text-white flex items-center group space-x-2 px-5 py-2"
-          >
+        
+          <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] bg-zinc-200 dark:bg-zinc-800 ">
+                <span
+                  className={cn(
+                    "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]",
+                  )}
+                  style={{
+                    WebkitMask:
+                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    WebkitMaskComposite: "destination-out",
+                    mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    maskComposite: "subtract",
+                    WebkitClipPath: "padding-box",
+                  }}
+                />
             <Link
               href={"/"}
               className="relative overflow-hidden px-6 py-3 bg-none text-foreground rounded-lg group h-8 w-30"
@@ -70,7 +81,7 @@ const Newhero = () => {
                 Go! Synex <ArrowRight />
               </span>
             </Link>
-          </HoverBorderGradient>
+            </div>
         </div>
         <div className="flex flex-row items-center justify-center w-full mt-15">
           <AnimatedTooltip items={people} />
