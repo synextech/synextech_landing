@@ -1,7 +1,7 @@
 
 
 import {Footer} from "@/components/Footer";
-import Faq from "@/components/landingpagecomp/Faq";
+import FAQ from "@/components/landingpagecomp/FAQ";
 import Newhero from "@/components/landingpagecomp/Newhero";
 import AboutUs from "@/components/landingpagecomp/AboutUs";
 import Process from "@/components/landingpagecomp/Process";
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutUs/>
       <Process />
       <Templates/>
-      <Faq/>
+      <FAQ/>
       <ContactUs />
       <Footer/>
 
