@@ -55,7 +55,7 @@ const Underline = `hover:-translate-y-1 border border-dotted rounded-xl p-2.5 tr
 
 export function Footer() {
   return (
-    <footer className="border-ali/20 :px-4 mx-auto w-full border-b   border-t  px-2">
+    <footer className="border-ali/20 :px-4 mx-auto w-full border-b   border-t  px-2 bg-zinc-950">
       <div className="relative mx-auto grid  max-w-7xl items-center justify-center gap-6 p-10 pb-0 md:flex ">
         <Link href="/">
           <p className="flex items-center justify-center rounded-full  ">
@@ -71,7 +71,7 @@ export function Footer() {
           brands to stand out in a crowded market. I believe in the power of
           design to tell stories, evoke emotions, and drive meaningful
           connections. I believe in quality, not quantity. Designali is actually
-          an agency of one. This means you'll work directly with me, founder of
+          an agency of one. This means you&apos;ll work directly with me, founder of
           Designali.
         </p>
       </div>
@@ -109,18 +109,18 @@ export function Footer() {
     </div>
 
     {/* Right Side - Newsletter */}
-    <div className="w-full md:w-1/3 flex flex-col justify-center bg- text-black  rounded-lg">
+    <div className="w-full md:w-1/3 flex flex-col justify-center text-foreground  rounded-lg">
       <h2 className="text-sm font-semibold">Stay connected</h2>
       <p className="text-xs text-black-400 mt-2">
-        Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too.
+        Sign up to our mailing list below and be the first to know about new updates. Don&apos;t worry, we hate spam too.
       </p>
       <div className="mt-2 flex">
         <input
           type="email"
           placeholder="Your Email Address"
-          className="w-full p-3 text-black   "
+          className="w-full p-3 text-foreground bg-background rounded-l-md outline-none"
         />
-        <button className=" text-black border-black  rounded-r-md">
+        <button className=" text-foreground bg-background px-4 py-2 rounded-r-md hover:bg-zinc-800">
           Get Notified
         </button>
       </div>
