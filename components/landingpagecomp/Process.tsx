@@ -15,7 +15,7 @@ const Process = () => {
           <span>Process</span>
         </AnimatedShinyText>
       </div>
-      <SparklesText text="Your Roadmap to Digital Excellence" className='text-2xl md:text-4xl font-bold text-foreground'/>
+      <SparklesText text="Your Roadmap to Digital Excellence" className='text-2xl md:text-4xl text-center font-bold text-foreground'/>
     </section>
   )
 }
