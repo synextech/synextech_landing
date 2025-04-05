@@ -6,7 +6,6 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, MoveDown } from "lucide-react";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
-import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 
 const people = [
