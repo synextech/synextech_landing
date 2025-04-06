@@ -57,12 +57,12 @@ export function Footer() {
   return (
     <footer className="border-ali/20 :px-4 mx-auto w-full border-b   border-t  px-2 bg-zinc-950">
       <div className="relative mx-auto grid  max-w-7xl items-center justify-center gap-6 p-10 pb-0 md:flex ">
-        <Link href="/">
+{/*         <Link href="/">
           <p className="flex items-center justify-center rounded-full  ">
             <DIcons.Designali className="w-8 text-red-600" />
           </p>
-        </Link>
-        <p className="bg-transparent text-center text-xs leading-4 text-primary/60 md:text-left">
+        </Link> */}
+{/*         <p className="bg-transparent text-center text-xs leading-4 text-primary/60 md:text-left">
           Welcome to Designali, where creativity meets strategy to bring your
           vision to life. I am passionate about transforming ideas into
           compelling visual experiences. I specialize in crafting unique brand
@@ -73,7 +73,7 @@ export function Footer() {
           connections. I believe in quality, not quantity. Designali is actually
           an agency of one. This means you&apos;ll work directly with me, founder of
           Designali.
-        </p>
+        </p> */}
       </div>
 
       <div className="mx-auto max-w-7xl px-6 ">
