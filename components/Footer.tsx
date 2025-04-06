@@ -114,11 +114,11 @@ export function Footer() {
       <p className="text-xs text-black-400 mt-2">
         Sign up to our mailing list below and be the first to know about new updates. Don&apos;t worry, we hate spam too.
       </p>
-      <div className="mt-2 flex">
+      <div className="mt-5 flex">
         <input
           type="email"
           placeholder="Your Email Address"
-          className="w-full p-3 text-foreground bg-background rounded-l-md outline-none"
+          className="w-full p-4 text-foreground bg-background rounded-l-lg "
         />
         <button className=" text-foreground bg-background px-4 py-2 rounded-r-md hover:bg-zinc-800">
           Get Notified
@@ -133,7 +133,7 @@ export function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-6 gap-y-4 px-6">
           <Link
             aria-label="Logo"
-            href="mailto:contact@designali.in"
+            href="mailto:mailto:synextech9@gmail.com"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -142,7 +142,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://x.com/designali_in"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -151,7 +151,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://www.instagram.com/designali.in/"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -160,7 +160,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://www.threads.net/designali.in"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -169,7 +169,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://chat.whatsapp.com/LWsNPcz5BlWDVOha41vzuh"
+            href="https://wa.me/919599745687"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -178,7 +178,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://www.behance.net/designali-in"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -187,7 +187,7 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://www.facebook.com/designali.agency"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
@@ -196,14 +196,14 @@ export function Footer() {
           </Link>
           <Link
             aria-label="Logo"
-            href="https://www.linkedin.com/company/designali"
+            href="#"
             rel="noreferrer"
             target="_blank"
             className={Underline}
           >
             <DIcons.LinkedIn className="h-5 w-5" />
           </Link>
-          <Link
+          {/* <Link
             aria-label="Logo"
             href="https://www.youtube.com/@designali-in"
             rel="noreferrer"
@@ -211,7 +211,7 @@ export function Footer() {
             className={Underline}
           >
             <DIcons.YouTube className="h-5 w-5" />
-          </Link>
+          </Link> */}
         </div>
         <ThemeToogle />
       </div>
@@ -230,15 +230,15 @@ export function Footer() {
               href="https://www.instagram.com/aliimam.in/"
               target="_blank"
             >
-              piyush {""}
+               SYNEXTECH {""}
             </Link>
           </span>
-          -
-          <span className="hover:text-ali dark:hover:text-red-600 cursor-pointer text-slate-600 dark:text-slate-400">
+          
+          {/* <span className="hover:text-ali dark:hover:text-red-600 cursor-pointer text-slate-600 dark:text-slate-400">
             <Link aria-label="Logo" className="" href="/">
               SYNEXTECH
             </Link>
-          </span>
+          </span> */}
         </div>
       </div>
     </footer>

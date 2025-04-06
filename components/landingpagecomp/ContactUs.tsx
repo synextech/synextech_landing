@@ -7,8 +7,12 @@ import { useAnimate } from "framer-motion";
 
 import { Button, buttonVariants } from "@/components/ui/button";
 
-import { HighlighterItem, HighlightGroup, Particles } from "@/components/ui/highlighter";
-import React from 'react'
+import {
+  HighlighterItem,
+  HighlightGroup,
+  Particles,
+} from "@/components/ui/highlighter";
+import React from "react";
 import { CardSpotlight } from "../ui/card-spotlight";
 
 const ContactUs = () => {
@@ -49,7 +53,7 @@ const ContactUs = () => {
       ],
       {
         repeat: Number.POSITIVE_INFINITY,
-      },
+      }
     );
   }, [animate]);
   return (
@@ -74,12 +78,16 @@ const ContactUs = () => {
                     ref={scope}
                   >
                     <DIcons.Designali className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" />
+                    <Link
+                      href="#">
                     <div
                       id="next-js"
                       className="absolute bottom-12 left-14 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
-                    >                      
+                    >
                       Online Presence
                     </div>
+                    </Link>
+                    
                     <div
                       id="react-js"
                       className="absolute left-2 top-20 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
@@ -134,19 +142,21 @@ const ContactUs = () => {
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Link
-                        href={"https://cal.com/aliimam/designali"}
+                        href={"https://cal.com/synextech"}
                         target="_blank"
                       >
-                        <Button className="bg-zinc-50 text-zinc-900 hover:bg-zinc-500 ">Book a call</Button>
+                        <Button className="bg-zinc-50 text-zinc-900 hover:bg-zinc-500 ">
+                          Book a call
+                        </Button>
                       </Link>
                       <Link
-                        href="mailto:contact@designali.in"
+                        href="mailto:synextech9@gmail.com"
                         target="_blank"
                         className={cn(
                           buttonVariants({
                             variant: "outline",
                             size: "icon",
-                          }),
+                          })
                         )}
                       >
                         <span className="flex items-center gap-1">
@@ -154,13 +164,13 @@ const ContactUs = () => {
                         </span>
                       </Link>
                       <Link
-                        href="https://wa.me/917678432186"
+                        href="https://wa.me/919599745687"
                         target="_blank"
                         className={cn(
                           buttonVariants({
                             variant: "outline",
                             size: "icon",
-                          }),
+                          })
                         )}
                       >
                         <span className="flex items-center gap-1">
@@ -179,7 +189,7 @@ const ContactUs = () => {
         </div>
       </HighlightGroup>
     </section>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;
