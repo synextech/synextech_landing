@@ -7,6 +7,7 @@ import AboutUs from "@/components/landingpagecomp/AboutUs";
 import Process from "@/components/landingpagecomp/Process";
 import ContactUs from "@/components/landingpagecomp/ContactUs";
 import Templates from "@/components/landingpagecomp/Templates";
+import { Services } from "@/components/landingpagecomp/Services";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Newhero/>
       <AboutUs/>
       <Process />
+      <Services />
       <Templates/>
       <Questions/>
       <ContactUs />

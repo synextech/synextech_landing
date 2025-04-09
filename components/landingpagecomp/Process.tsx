@@ -59,7 +59,7 @@ const Process = () => {
       />
 
       <div className="flex flex-col md:flex-row justify-around gap-10 items-center px-10 ">
-        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-800">
+        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-200 dark:bg-neutral-800">
           <GlowingEffect
             blur={0}
             borderWidth={3}
@@ -75,9 +75,9 @@ const Process = () => {
               Laying the Foundation for Success{" "}
             </CardDescription>
           </CardHeader>
-          <CardContent className="p-4">
+          <CardContent className="px-4">
             <div
-              className="relative flex h-[300px] w-full items-center justify-center overflow-hidden p-10"
+              className="relative flex h-[250px] w-full items-center justify-center overflow-hidden pb-10"
               ref={containerRef}
             >
               <div className="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10">
@@ -162,7 +162,7 @@ const Process = () => {
             </CardDescription>
           </CardFooter>
         </Card>
-        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-800">
+        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-200 dark:bg-neutral-800">
           <GlowingEffect
             blur={0}
             borderWidth={3}
@@ -173,18 +173,17 @@ const Process = () => {
             inactiveZone={0.01}
           />
           <CardHeader className="border-b border-border p-4 [.border-b]:pb-4">
-            <CardTitle> Agile Development & Quality Assurance</CardTitle>
+            <CardTitle>2. Agile Development & Quality Assurance</CardTitle>
             <CardDescription>
               Building with Precision, Testing with Rigor
             </CardDescription>
           </CardHeader>
           <CardContent className="px-4 py-0">
-            <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-lg m-0">
+            <div className="relative w-full max-w-md overflow-hidden rounded-2xl m-0">
               <video
-                className="w-full h-full object-cover scale-105"
+                className="w-[270px] h-[270px] mx-auto object-cover scale-105 shadow-lg"
                 autoPlay
                 muted
-                
                 loop
                 playsInline
                 preload="auto"
@@ -201,7 +200,7 @@ const Process = () => {
             </CardDescription>
           </CardFooter>
         </Card>
-        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-800">
+        <Card className="p-0 max-w-sm w-full shadow-none border-none relative bg-neutral-200 dark:bg-neutral-800">
           <GlowingEffect
             blur={0}
             borderWidth={3}
@@ -212,95 +211,27 @@ const Process = () => {
             inactiveZone={0.01}
           />
           <CardHeader className="border-b border-border p-4 [.border-b]:pb-4">
-            <CardTitle>1. Strategic Discovery & Planning</CardTitle>
+            <CardTitle>3. Deploy & Scale</CardTitle>
             <CardDescription>
-              Laying the Foundation for Success{" "}
+            Seamless Deployment & Continuous Optimization
             </CardDescription>
           </CardHeader>
-          <CardContent className="p-4">
-            <div
-              className="relative flex h-[300px] w-full items-center justify-center overflow-hidden p-10"
-              ref={containerRef}
-            >
-              <div className="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10">
-                <div className="flex flex-row items-center justify-between">
-                  <Circle ref={div1Ref}>
-                    <Icons.googleDrive />
-                  </Circle>
-                  <Circle ref={div5Ref}>
-                    <Icons.googleDocs />
-                  </Circle>
-                </div>
-                <div className="flex flex-row items-center justify-between">
-                  <Circle ref={div2Ref}>
-                    <Icons.notion />
-                  </Circle>
-                  <Circle ref={div4Ref} className="size-16">
-                    <Icons.openai />
-                  </Circle>
-                  <Circle ref={div6Ref}>
-                    <Icons.zapier />
-                  </Circle>
-                </div>
-                <div className="flex flex-row items-center justify-between">
-                  <Circle ref={div3Ref}>
-                    <Icons.whatsapp />
-                  </Circle>
-                  <Circle ref={div7Ref}>
-                    <Icons.messenger />
-                  </Circle>
-                </div>
-              </div>
-
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div1Ref}
-                toRef={div4Ref}
-                curvature={-75}
-                endYOffset={-10}
-              />
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div2Ref}
-                toRef={div4Ref}
-              />
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div3Ref}
-                toRef={div4Ref}
-                curvature={75}
-                endYOffset={10}
-              />
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div5Ref}
-                toRef={div4Ref}
-                curvature={-75}
-                endYOffset={-10}
-                reverse
-              />
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div6Ref}
-                toRef={div4Ref}
-                reverse
-              />
-              <AnimatedBeam
-                containerRef={containerRef}
-                fromRef={div7Ref}
-                toRef={div4Ref}
-                curvature={75}
-                endYOffset={10}
-                reverse
+          <CardContent className="px-4 py-1">
+          <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-lg m-0 p-0">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                src="https://res.cloudinary.com/dkxsadipm/video/upload/v1744220171/WhatsApp_Video_2025-04-09_at_10.49.39_PM_horjkn.mp4"
               />
             </div>
           </CardContent>
           <CardFooter className="p-4 border-t border-border [.border-t]:pt-4">
             <CardDescription>
-              We begin with a comprehensive consultation to align your
-              objectives with technical possibilities. Through market analysis,
-              requirement mapping, and feasibility studies, we craft an
-              actionable roadmap for sustainable growth.
+            We manage zero-downtime deployments with post-launch monitoring, analytics integration, and iterative updates. Our maintenance plans ensure your platform stays secure, updated, and aligned with market trends.
             </CardDescription>
           </CardFooter>
         </Card>
