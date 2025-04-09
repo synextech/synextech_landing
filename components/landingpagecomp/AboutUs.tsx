@@ -4,7 +4,7 @@ import BlurText from "@/components/BlurText";
 
 const AboutUs = () => {
   return (
-    <div className="h-150 w-full flex flex-col justify-center items-center mt-0 bg-background">
+    <div className="h-150 w-full flex flex-col justify-center items-center mt-0 bg-background relative">
       <ScrollFloat
         animationDuration={2}
         ease="back.inOut(2)"

@@ -20,12 +20,6 @@ export default function Home() {
       <Questions/>
       <ContactUs />
       <Footer/>
-
-
-      
-      
-
-
     </div>
   );
 }
