@@ -184,7 +184,7 @@ const Process = () => {
                 className="w-full h-full object-cover scale-105"
                 autoPlay
                 muted
-                controls
+                
                 loop
                 playsInline
                 preload="auto"
