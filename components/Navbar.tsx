@@ -15,6 +15,7 @@ import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavbarDemo() {
   const { setTheme } = useTheme();
@@ -61,8 +62,8 @@ export default function NavbarDemo() {
               <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             </Button>
           </NavbarButton>
-
-          <NavbarButton variant="primary">Book a call</NavbarButton>
+          <Link href={"https://cal.com/synextech"} target="_blank">
+          <NavbarButton variant="primary">Book a call</NavbarButton></Link>
         </div>
       </NavBody>
 
@@ -102,14 +103,14 @@ export default function NavbarDemo() {
           onClose={() => setIsMobileMenuOpen(false)}
         >
           {navItems.map((item, idx) => (
-            <a
+            <Link
               key={`mobile-link-${idx}`}
               href={item.link}
               onClick={() => setIsMobileMenuOpen(false)}
               className="relative text-neutral-600 dark:text-neutral-300"
             >
               <span className="block">{item.name}</span>
-            </a>
+            </Link>
           ))}
           <div className="flex w-full flex-col gap-4">
             <NavbarButton

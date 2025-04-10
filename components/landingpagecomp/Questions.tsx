@@ -3,32 +3,49 @@ import { AnimatedGradientText } from "@/src/components/magicui/animated-gradient
 
 const defaultData = [
   {
-    answer: "The internet doesn't close. It's available 24/7.",
+    answer:
+      "SynexTech is a digital platform that helps any organization—be it a school, NGO, local business, religious trust, or club—get online easily and affordably. We offer a free basic website and optional tools to manage operations, communication, payments, and more",
     iconPosition: "right" as "right" | "left",
     id: 1,
-    question: "How late does the internet close?",
-  },
-  {
-    answer: "No, you don't need a license to browse this website.",
-    id: 2,
-    question: "Do I need a license to browse this website?",
+    question: "What is SynexTech?",
   },
   {
     answer:
-      "Our cookies are digital, not edible. They're used for website functionality.",
-    id: 3,
-    question: "What flavour are the cookies?",
+      "Yes! We provide a basic website for free to help Organization  get started.",
+    id: 2,
+    question: " Is it really free?",
   },
   {
-    answer: "Yes, but we do have a return policy",
+    answer:
+      "No. Our team will set everything up for you. It’s simple, and we guide you step-by-step.",
+    id: 3,
+    question: "Do I need technical knowledge to use SynexTech?",
+  },
+  {
+    answer:
+      "Once we receive your details, your website can be ready in 1 to 3 days.",
     iconPosition: "left" as "right" | "left",
     id: 4,
-    question: "Can I get lost here?",
+    question: "How long does it take to get our school website?",
   },
   {
-    answer: "Don't worry, you can always go back or refresh the page.",
+    answer:
+      "We provide ongoing support via phone, WhatsApp, and email. Our goal is to make sure you're always up and running.",
     id: 5,
-    question: "What if I click the wrong button?",
+    question: "What if I need support later?",
+  },
+
+  {
+    answer:
+      "Absolutely. Your data is stored securely, is never shared, and is protected by strong privacy policies.",
+    id: 6,
+    question: " Is my organization’s data safe?",
+  },
+  {
+    answer:
+      "Yes! We offer 24×7 support via phone calls, text messages, WhatsApp, and email. We're always here to help you, day or night.",
+    id: 7,
+    question: "Do you provide customer support?",
   },
 ];
 const Questions = () => {

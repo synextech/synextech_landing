@@ -78,16 +78,15 @@ const ContactUs = () => {
                     ref={scope}
                   >
                     <DIcons.Designali className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" />
-                    <Link
-                      href="#">
-                    <div
-                      id="next-js"
-                      className="absolute bottom-12 left-14 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
-                    >
-                      Online Presence
-                    </div>
+                    <Link href="#">
+                      <div
+                        id="next-js"
+                        className="absolute bottom-12 left-14 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
+                      >
+                        Online Presence
+                      </div>
                     </Link>
-                    
+
                     <div
                       id="react-js"
                       className="absolute left-2 top-20 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
@@ -140,11 +139,20 @@ const ContactUs = () => {
                     <p className="mb-4 text-slate-400">
                       Feel free to reach out to us!
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <p className="mb-4 text-slate-400">
                       <Link
-                        href={"https://cal.com/synextech"}
+                        href="https://www.google.com/maps/search/?api=1&query=402,+Arunachal+Building,+Metro+Gate+No.+4,+Connaught+Place+110001"
                         target="_blank"
+                        rel="noopener noreferrer"
+                        className=""
                       >
+                        402, Arunachal Building, Metro Gate No. 4, Connaught
+                        Place 110001
+                      </Link>
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Link href={"https://cal.com/synextech"} target="_blank">
                         <Button className="bg-zinc-50 text-zinc-900 hover:bg-zinc-500 ">
                           Book a call
                         </Button>
