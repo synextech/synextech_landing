@@ -63,7 +63,7 @@ export default function NavbarDemo() {
             </Button>
           </NavbarButton>
           <Link href={"https://cal.com/synextech"} target="_blank">
-          <NavbarButton variant="primary">Book a call</NavbarButton></Link>
+          <Button className="cursor-pointer" >Book a call</Button></Link>
         </div>
       </NavBody>
 
