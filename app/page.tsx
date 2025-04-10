@@ -18,7 +18,7 @@ export default function Home() {
       <AboutUs/>
       <Process />
       <Services />
-      <Templates/>
+      {/* <Templates/> */}
       <Questions/>
       <ContactUs />
       <Footer/>
