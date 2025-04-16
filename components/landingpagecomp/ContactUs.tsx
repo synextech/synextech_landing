@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DIcons } from "dicons";
 import { useAnimate } from "framer-motion";
-
+import Image from "next/image";
 import { Button, buttonVariants } from "@/components/ui/button";
 
 import {
@@ -57,7 +57,7 @@ const ContactUs = () => {
     );
   }, [animate]);
   return (
-    <section className="relative mx-5 md:mx-auto my-20 max-w-5xl ">
+    <section className="relative mx-5 md:mx-auto my-20 max-w-5xl" id="contact">
       <HighlightGroup className="group h-full">
         <div
           className="group/item h-full md:col-span-6 lg:col-span-12"
@@ -77,7 +77,8 @@ const ContactUs = () => {
                     className="relative mx-auto h-[270px] w-[300px] md:h-[270px] md:w-[300px]"
                     ref={scope}
                   >
-                    <DIcons.Designali className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" />
+                    {/* <DIcons.Designali className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" /> */}
+                    <Image src="/synex_logo.svg" alt="logo" width="30" height="30" className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2"/>
                     <Link href="#">
                       <div
                         id="next-js"

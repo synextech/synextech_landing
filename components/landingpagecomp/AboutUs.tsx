@@ -15,20 +15,14 @@ const AboutUs = () => {
       >
         What We Do
       </ScrollFloat>
-      <BlurText
-        text="AI & SaaS Development Experts Driving Digital Transformation"
-        delay={100}
-        animateBy="words"
-        direction="top"
-        className="text-2xl md:text-4xl mx-auto font-medium text-foreground text-center w-4/6 mt-0 mb-12"
-      />
-      <BlurText
-        text="SynexTech is a visionary technology partner empowering businesses with AI-driven software development, blockchain innovation, and scalable cloud solutions. Discover how we redefine digital success."
-        delay={150}
-        animateBy="words"
-        direction="top"
-        className="text-lg md:text-2xl mx-auto text-foreground text-center w-4/7 mt-0 md:mt-8"
-      />
+      <h1 className="text-2xl md:text-4xl mx-auto font-medium text-foreground text-center w-4/6 mt-0 mb-12">
+        AI & SaaS Development Experts Driving Digital Transformation{" "}
+      </h1>
+      <h2 className="text-lg md:text-2xl mx-auto text-foreground text-center w-4/7 mt-0 md:mt-8">
+        SynexTech is a visionary technology partner empowering businesses with
+        AI-driven software development, blockchain innovation, and scalable
+        cloud solutions. Discover how we redefine digital success.
+      </h2>
     </div>
   );
 };
