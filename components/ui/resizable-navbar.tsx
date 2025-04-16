@@ -124,7 +124,22 @@ export const NavItems = ({ className }: { className?: string }) => {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="Templates">
+          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          
+          
+            
+            <ProductItem
+              title="school dashboard"
+              href="./template"
+              src=""
+              description=""
+            />
+          </div>
+        </MenuItem>
+    
+        {/* <MenuItem setActive={setActive} active={active} item="Templates">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Music School Website"
@@ -151,7 +166,7 @@ export const NavItems = ({ className }: { className?: string }) => {
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem setActive={setActive} active={active} item="Contact Us">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Call</HoveredLink>
