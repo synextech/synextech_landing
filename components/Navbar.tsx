@@ -26,7 +26,7 @@ export default function NavbarDemo() {
     },
     {
       name: "Templates",
-      link: "#templates",
+      link: "/template",
     },
     {
       name: "Contact",
