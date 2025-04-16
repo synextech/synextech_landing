@@ -16,10 +16,10 @@ const navigation = {
           id: "about",
           name: "About",
           items: [
-            { name: "About", href: "/about" },
-            { name: "Works", href: "/agency/works" },
-            { name: "Pricing", href: "/pricing" },
-            { name: "Products", href: "/products" },
+            { name: "About", href: "#" },
+            { name: "Works", href: "#" },
+            { name: "Pricing", href: "#" },
+            { name: "Products", href: "#" },
           ],
         },
 
@@ -27,10 +27,10 @@ const navigation = {
           id: "designs",
           name: "Designs",
           items: [
-            { name: "Design", href: "/designs" },
-            { name: "Components", href: "/components" },
-            { name: "Blogs", href: "/blogs" },
-            { name: "Dashboard", href: "/dashboard" },
+            { name: "Design", href: "#" },
+            { name: "Components", href: "#" },
+            { name: "Blogs", href: "#" },
+            { name: "Dashboard", href: "#" },
           ],
         },
 
@@ -38,10 +38,10 @@ const navigation = {
           id: "company",
           name: "Company",
           items: [
-            { name: "Contact", href: "/contact" },
-            { name: "Terms", href: "/terms" },
-            { name: "Privacy", href: "/privacy" },
-            { name: "Agency", href: "/agency" },
+            { name: "Contact", href: "#" },
+            { name: "Terms", href: "#" },
+            { name: "Privacy", href: "#" },
+            { name: "Agency", href: "#" },
           ],
         },
       ],
@@ -54,25 +54,6 @@ const Underline = `hover:-translate-y-1 border border-dotted rounded-xl p-2.5 tr
 export function Footer() {
   return (
     <footer className=" mx-auto w-full px-2 bg-background text-foreground">
-      {/* <div className="relative mx-auto grid  max-w-7xl items-center justify-center gap-6 p-10 pb-0 md:flex ">
-                <Link href="/">
-          <p className="flex items-center justify-center rounded-full  ">
-            <DIcons.Designali className="w-8 text-red-600" />
-          </p>
-        </Link>
-                <p className="bg-transparent text-center text-xs leading-4 text-primary/60 md:text-left">
-          Welcome to Designali, where creativity meets strategy to bring your
-          vision to life. I am passionate about transforming ideas into
-          compelling visual experiences. I specialize in crafting unique brand
-          identities, immersive digital experiences, and engaging content that
-          resonates with your audience. My mission is to empower businesses and
-          brands to stand out in a crowded market. I believe in the power of
-          design to tell stories, evoke emotions, and drive meaningful
-          connections. I believe in quality, not quantity. Designali is actually
-          an agency of one. This means you&apos;ll work directly with me, founder of
-          Designali.
-        </p>
-      </div> */}
 
       <div className="mx-auto max-w-7xl px-6 ">
         <div className="border-b border-dotted"></div>
@@ -141,33 +122,24 @@ export function Footer() {
           >
             <DIcons.Mail strokeWidth={1.5} className="h-5 w-5" />
           </Link>
-          {/* <Link
+          <Link
             aria-label="Logo"
-            href="#"
+            href="https://twitter.com/psbvision_x"
             rel="noreferrer"
             target="_blank"
             className={Underline}
           >
             <DIcons.X className="h-5 w-5" />
-          </Link> */}
+          </Link>
           <Link
             aria-label="Logo"
-            href="#"
+            href="https://www.instagram.com/psbvision/"
             rel="noreferrer"
             target="_blank"
             className={Underline}
           >
             <DIcons.Instagram className="h-5 w-5" />
           </Link>
-          {/* <Link
-            aria-label="Logo"
-            href="#"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <DIcons.Threads className="h-5 w-5" />
-          </Link> */}
           <Link
             aria-label="Logo"
             href="https://wa.me/919599745687"
@@ -177,15 +149,6 @@ export function Footer() {
           >
             <DIcons.WhatsApp className="h-5 w-5" />
           </Link>
-          {/* <Link
-            aria-label="Logo"
-            href="#"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <DIcons.Behance className="h-5 w-5" />
-          </Link> */}
           {/* <Link
             aria-label="Logo"
             href="#"
@@ -204,15 +167,6 @@ export function Footer() {
           >
             <DIcons.LinkedIn className="h-5 w-5" />
           </Link>
-          {/* <Link
-            aria-label="Logo"
-            href="https://www.youtube.com/@designali-in"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <DIcons.YouTube className="h-5 w-5" />
-          </Link> */}
         </div>
         <ThemeToogle />
       </div>
@@ -228,7 +182,7 @@ export function Footer() {
             <Link
               aria-label="Logo"
               className="font-bold"
-              href="https://www.instagram.com/aliimam.in/"
+              href="https://www.instagram.com/psbvision/"
               target="_blank"
             >
               SYNEXTECH {""}

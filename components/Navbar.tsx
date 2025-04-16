@@ -26,7 +26,7 @@ export default function NavbarDemo() {
     },
     {
       name: "Templates",
-      link: "/template",
+      link: "#template",
     },
     {
       name: "Contact",
@@ -113,17 +113,19 @@ export default function NavbarDemo() {
             </Link>
           ))}
           <div className="flex w-full flex-col gap-4">
-            <NavbarButton
+            {/* <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"
               className="w-full"
             >
               Drop Message
-            </NavbarButton>
+            </NavbarButton> */}
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"
               className="w-full"
+              href="https://cal.com/synextech"
+              target="_blank"
             >
               Book a call
             </NavbarButton>

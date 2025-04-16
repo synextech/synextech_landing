@@ -15,6 +15,7 @@ import {
   Menu,
   MenuItem,
   ProductItem,
+  SameProductItem,
 } from "@/components/ui/navbar-menu";
 
 interface NavbarProps {
@@ -124,22 +125,8 @@ export const NavItems = ({ className }: { className?: string }) => {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
-
-        <MenuItem setActive={setActive} active={active} item="Templates">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-          
-          
-            
-            <ProductItem
-              title="school dashboard"
-              href="./template"
-              src=""
-              description=""
-            />
-          </div>
-        </MenuItem>
     
-        {/* <MenuItem setActive={setActive} active={active} item="Templates">
+        <MenuItem setActive={setActive} active={active} item="Templates">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Music School Website"
@@ -147,10 +134,10 @@ export const NavItems = ({ className }: { className?: string }) => {
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit/.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+            <SameProductItem
+              title="School Management System"
+              href="#template"
+              src="/smsss.png"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
@@ -166,7 +153,7 @@ export const NavItems = ({ className }: { className?: string }) => {
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </MenuItem> */}
+        </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Contact Us">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Call</HoveredLink>
